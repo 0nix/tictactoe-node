@@ -1,0 +1,58 @@
+
+@media (max-width: 550px) and (orientation: portrait){
+    #board, #stats{
+        width: 100%;
+    }
+    
+    #ttt-board-container{
+        padding-left: 10px;
+        margin-top: 5px;
+    }
+    .ttt-piece{
+        font-size: 2em;
+    }
+    .ttt-button{
+        padding-bottom: 30px;
+        margin-bottom: 5px;
+    }
+    .ttt-li{
+        padding-bottom: 5px !important;
+        width: 100px !important;
+    }
+}
+@media (max-width: 550px) and (orientation: landscape){
+    #ttt-board-container{
+        padding-left: 5px;
+        margin-top: 5px;
+    }
+    .ttt-piece{
+        font-size: 1.8em;
+    }
+    .ttt-button{
+        padding-bottom: 40px;
+        margin-bottom: 2px;
+    }
+    .ttt-li{
+        padding-bottom: 5px !important;
+        width: 100px !important;
+    }
+}
+@media (min-width: 551px){
+    #ttt-board-container{
+        padding-left: 5px;
+        margin-top: 5px;
+    }
+    #stats{
+        margin-top: 5px;
+    }
+    .ttt-piece{
+        font-size: 4em;
+    }
+    .ttt-button{
+        margin-bottom: 2px;
+    }
+    .ttt-li{
+        padding-bottom: 5px !important;
+        width: 120px !important;
+    }
+}

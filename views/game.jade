@@ -1,0 +1,28 @@
+html
+    include header
+    link(rel="stylesheet" href="/game-client.css")
+    body
+         .row
+            #board.columns(class="small-8 medium-7")
+                .row
+                    .columns(id="ttt-board-container" class="small-12 medium-10 medium-centered large-8 large-centered")
+                        ul(class="small-block-grid-3" id="ttt-board")
+            #stats.columns(class="small-4 medium-5")
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor erat nulla, eget gravida orci ullamcorper eu. Nunc justo arcu, faucibus id arcu sit amet, egestas molestie est. Maecenas a facilisis quam. Fusce faucibus a dui eget interdum. Nulla pharetra tincidunt est at convallis. Praesent tincidunt, odio quis dignissim molestie, sapien magna convallis arcu, faucibus aliquet sem felis sed urna. Vestibulum a lectus lacus.
+        include script
+        include bkscript
+        script(id='itemTpl', type='text/template')
+            |<li class="ttt-li"><% if (allDisabled || marker > 0) { %>
+            |   <a href="#" id= "<%= slotNum %>" class="button ttt-button disabled">
+            |   <% if(marker === 1) {%>
+            |       <i class="ttt-piece fi-record"></i>
+            |   <%} else if(marker === 2){ %>
+            |       <i class="ttt-piece fi-x"></i>
+            |   <%} else {%>
+            |       <i class="ttt-piece fi-x" style="opacity: 0;"></i>
+            |   <%}%>
+            |<% } else { %>
+            |   <a href="#" id= "<%= slotNum %>" class="button ttt-button"><i class="ttt-piece fi-record" style="opacity: 0;"></i>
+            |<% } %>
+            |</a></li>
+        script(src="/game-client.js")

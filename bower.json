@@ -1,0 +1,23 @@
+{
+  "name": "redis-expermiment",
+  "version": "0",
+  "main": "server.js",
+  "authors": [
+    "Ed de Luna"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+      "foundation": "latest",
+      "foundation-icons": "latest",
+      "foundation-icon-fonts":"latest",
+      "backbone": "latest"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "redis-experiment",
+  "main": "server.js",
+  "dependencies": {
+      "express": "latest",
+      "socket.io": "latest",
+      "redis": "latest",
+      "jade":"latest"
+  },
+  "scripts": {
+    "start": "node --harmony ./server.js"
+  }
+}
